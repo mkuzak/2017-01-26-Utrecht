@@ -17,6 +17,13 @@
       <a href="{{ site.dc_site }}" class="pull-left">
         <img class="navbar-logo" src="{{ page.root }}/assets/img/dc-icon-black.svg" alt="Data Carpentry logo" />
       </a>
+      {% elsif page.carpentry == "other" %}
+      <a href="{{ site.surfsara_site }}" class="pull-left">
+        <img class="navbar-logo" src="{{ page.root }}/assets/img/surfsara-logo-black.png" alt="SURFsara logo" />
+      </a>
+      <a href="{{ site.nlesc_site }}" class="pull-left">
+        <img class="navbar-logo" src="{{ page.root }}/assets/img/escience-logo-cyanblack.png" alt="NLeSc logo" />
+      </a>
       {% elsif site.carpentry == "swc" %}
       <a href="{{ site.swc_site }}" class="pull-left">
         <img class="navbar-logo" src="{{ page.root }}/assets/img/swc-icon-blue.svg" alt="Software Carpentry logo" />
@@ -24,6 +31,13 @@
       {% elsif site.carpentry == "dc" %}
       <a href="{{ site.dc_site }}" class="pull-left">
         <img class="navbar-logo" src="{{ page.root }}/assets/img/dc-icon-black.svg" alt="Data Carpentry logo" />
+      </a>
+      {% elsif site.carpentry == "other" %}
+      <a href="{{ site.surfsara_site }}" class="pull-left">
+        <img class="navbar-logo" src="{{ page.root }}/assets/img/surfsara-logo-black.png" alt="SURFsara logo" />
+      </a>
+      <a href="{{ site.nlesc_site }}" class="pull-left">
+        <img class="navbar-logo" src="{{ page.root }}/assets/img/escience-logo-cyanblack.png" alt="NLeSc logo" />
       </a>
       {% endif %}
 
