@@ -12,7 +12,7 @@ humantime: "9:00 am - 5:00 pm"    # human-readable times for the workshop (e.g.,
 startdate: 2016-11-21      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2016-11-22        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["Ander Astudillo", "Natalie Danezi", "Maithili Kalamkar", "Mateusz Kuzak", "Carlos Martinez Ortiz"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: [""]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+helper: ["Marieke Klein"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 contact: ["marieke.klein@radboudumc.nl"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 etherpad:             # optional: URL for the workshop Etherpad if there is one
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
@@ -162,13 +162,13 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   <div class="col-md-6">
     <h3>Day 2</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Hands on: Python advanced + parallelization + looping</td> </tr>
+      <tr> <td>09:00</td>  <td>Hands on: Python advanced, functions and parallelisation</td> </tr>
       <tr> <td>11:00</td>  <td>Hands on: Git version control on Github</td> </tr>
       <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Presentation: Introduction to Life science grid (SURFsara); Hands on: Submitting jobs to the grid</td> </tr>
+      <tr> <td>13:00</td>  <td>Presentation: Introduction to Life Science Grid (LSG, SURFsara); Hands on: Submitting jobs to the LSG</td> </tr>
       <tr> <td>15:00</td>  <td>Coffee</td> </tr>
       <tr> <td>15:30</td>  <td>Hands on: Continued - Submitting jobs to the grid</td> </tr>
-      <tr> <td>16:30</td>  <td>Short talk on the use case at Donders Institute</td> </tr>
+      <tr> <td>16:30</td>  <td>Short talk on the LSG use case at Donders Institute</td> </tr>
     </table>
   </div>
 </div>
@@ -287,15 +287,6 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
            is given at https://help.github.com/articles/supported-browsers/-->
   <h3>Git</h3>
   <p>
-    Git is a version control system that lets you track who made changes
-    to what when and has options for easily updating a shared or public
-    version of your code
-    on <a href="https://github.com/">github.com</a>. You will need a
-    <a href="https://help.github.com/articles/supported-browsers/">supported</a>
-    web browser (current versions of Chrome, Firefox or Safari,
-    or Internet Explorer version 9 or above).
-  </p>
-  <p>
     You will need an account at <a href="https://github.com/">github.com</a>
     for parts of the Git lesson. Basic GitHub accounts are free. We encourage
     you to create a GitHub account if you don't have one already.
@@ -305,38 +296,6 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
     for keeping your email address private</a> provided at GitHub.
   </p>
 
-  <div class="row">
-    <div class="col-md-4">
-      <h4 id="git-windows">Windows</h4>
-      <p>
-        Git should be installed on your computer as part of your Bash
-        install (described above).
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="git-macosx">Mac OS X</h4>
-      <a href="https://www.youtube.com/watch?v=9LQhwETCdwY ">Video Tutorial</a>
-      <p>
-        <strong>For OS X 10.9 and higher</strong>, install Git for Mac
-        by downloading and running the most recent "mavericks" installer from
-        <a href="http://sourceforge.net/projects/git-osx-installer/files/">this list</a>.
-        After installing Git, there will not be anything in your <code>/Applications</code> folder,
-        as Git is a command line program.
-        <strong>For older versions of OS X (10.5-10.8)</strong> use the
-        most recent available installer labelled "snow-leopard"
-        <a href="http://sourceforge.net/projects/git-osx-installer/files/">available here</a>.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="git-linux">Linux</h4>
-      <p>
-        If Git is not already available on your machine you can try to
-        install it via your distro's package manager. For Debian/Ubuntu run
-        <code>sudo apt-get install git</code> and for Fedora run
-        <code>sudo yum install git</code>.
-      </p>
-    </div>
-  </div>
 </div> <!-- End of 'Git' section. -->
 
 <div id="editor"> <!-- Start of 'editor' section. -->
@@ -355,21 +314,14 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   <div class="row">
     <div class="col-md-4">
       <h4 id="editor-windows">Windows</h4>
-      <a href="https://www.youtube.com/watch?v=339AEqk9c-8">Video Tutorial</a>
       <p>
         nano is a basic editor and the default that instructors use in the workshop.
-        To install it,
-        download the <a href="{{site.swc_installer}}">Software Carpentry Windows installer</a>
-        and double click on the file to run it.
-        <strong>This installer requires an active internet connection.</strong>
+        This editor comes by default with the Babun bash.
       </p>
       <p>
         Others editors that you can use are
         <a href="http://notepad-plus-plus.org/">Notepad++</a> or
         <a href="http://www.sublimetext.com/">Sublime Text</a>.
-        <strong>Be aware that you must
-          add its installation directory to your system path.</strong>
-        Please ask your instructor to help you do this.
       </p>
     </div>
     <div class="col-md-4">
@@ -423,16 +375,6 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
       (e.g., 3.4 is fine).
     </p>
 
-    <p>
-      We will teach Python using the IPython notebook, a programming environment
-      that runs in a web browser. For this to work you will need a reasonably
-      up-to-date browser. The current versions of the Chrome, Safari and
-      Firefox browsers are all
-      <a href="http://ipython.org/ipython-doc/2/install/install.html#browser-compatibility">supported</a>
-      (some older browsers, including Internet Explorer version 9
-      and below, are not).
-    </p>
-
   <div class="row">
     <div class="col-md-4">
       <h4 id="python-windows">Windows</h4>
@@ -481,6 +423,25 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
       </ol>
     </div>
   </div>
+
+<div id="x-window client">
+  <h3>X-window client</h3>
+  <div class="row">
+    <div class="col-md-4">
+      <h4 id="x-windows">Windows</h4>
+        Install Xming from <a href="https://sourceforge.net/projects/xming/">this page</a>
+    </div>
+    <div class="col-md-4">
+      <h4 id="x-mac">MacOS</h4>
+        Install XQuarz from <a href="https://www.xquartz.org">this page</a>
+    </div>
+    <div class="col-md-4">
+      <h4 id="x-linux">Linux</h4>
+        Linux users normally don’t need to install anything.
+    </div>
+  </div>
+</div>
+    
 <!--
   <p>
   Once you are done installing the software listed above,
