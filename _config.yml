@@ -9,7 +9,7 @@ carpentry: "other"
 title: "Introduction to Programming for Researchers"
 
 # Contact email address.
-email: lessons@software-carpentry.org
+email: m.kuzak@esciencecenter.nl
 
 #------------------------------------------------------------
 # Generic settings (should not need to change).
@@ -20,12 +20,12 @@ kind: "workshop"
 
 # Magic to make URLs resolve both locally and on GitHub.
 # See https://help.github.com/articles/repository-metadata-on-github-pages/.
-repository: <mkuzak>/<radboud-21-11-2016>
+repository: <mkuzak>/<2017-01-26-Utrecht>
 
 # Sites.
 amy_site: "https://amy.software-carpentry.org/workshops"
 dc_site: "http://datacarpentry.org"
-surfsara_site: "https://www.surf.nl/en/about-surf/subsidiaries/surfsara/"
+leiden_uni_site: "https://www.universiteitleiden.nl/en"
 nlesc_site: "https://www.esciencecenter.nl"
 swc_github: "https://github.com/swcarpentry"
 swc_site: "https://software-carpentry.org"
